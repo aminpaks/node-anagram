@@ -1,0 +1,43 @@
+{
+  "name": "node-anagram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run build && node ./app/index.js",
+    "dev": "nodemon --watch",
+    "clean": "rimraf ./app",
+    "build": "npm run clean && tsc --noEmit false --sourceMap false --outDir ./app",
+    "test": "jest",
+    "test:watch": "jest --verbose --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "lusca": "^1.6.1",
+    "word-list": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/compression": "0.0.36",
+    "@types/errorhandler": "0.0.32",
+    "@types/express": "^4.16.1",
+    "@types/express-session": "^1.15.12",
+    "@types/express-validator": "^3.0.0",
+    "@types/jest": "^24.0.4",
+    "@types/lusca": "^1.5.0",
+    "@types/node": "^11.9.3",
+    "@types/supertest": "^2.0.7",
+    "jest": "^24.1.0",
+    "nodemon": "^1.18.10",
+    "rimraf": "^2.6.3",
+    "supertest": "^3.4.2",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3"
+  }
+}

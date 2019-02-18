@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["es2015", "es2016"],
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "typeRoots": ["node_modules/@types", "@types"]
+  },
+  "include": ["@types", "src"]
+}
